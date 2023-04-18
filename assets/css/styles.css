@@ -59,17 +59,17 @@ a {
     z-index: 1;
 }
 
-.header {
-    display: flex;
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    /* padding-top: 38px; */
     padding: 12px 0;
 }
 
