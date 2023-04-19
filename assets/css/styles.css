@@ -3,7 +3,12 @@
 }
 
 :root {
-    --primary-color: #0f1b4c;
+    --primary-color: #7398f7;
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
 }
 
 html,
@@ -44,10 +49,20 @@ a {
     color: #ffffff;
 }
 
-.btn:hover {
+/* .btn:hover {
     opacity: 0.9;
-}
+} */
 
+.grd-text {
+    background-image: linear-gradient(
+        325deg,
+        var(--btn-bg-2) 0%,
+        var(--btn-bg-1) 55%,
+        var(--btn-bg-2) 90%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+}
 /* Line limitation for long text */
 .line-clamp {
     display: -webkit-box;
@@ -128,7 +143,6 @@ a {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
-    color: #000336;
 }
 
 .hero-wrap .desc {
@@ -210,7 +224,8 @@ a {
     font-size: 3.5rem;
     line-height: 1;
     text-align: center;
-    color: #000339;
+    /* color: #000339; */
+    color: var(--btn-bg-2);
 }
 
 .guides .sub-title::before {
@@ -222,7 +237,8 @@ a {
     display: inline-block;
     width: 41px;
     height: 4px;
-    background: #000339;
+    /* background: #000339; */
+    background: var(--btn-bg-2);;
     border-radius: 12px;
 }
 
@@ -289,7 +305,7 @@ a {
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 1;
-    color: #000339;
+    /* color: #000339; */
 }
 
 .featured .row {
@@ -352,7 +368,7 @@ a {
     font-weight: 600;
     font-size: 2rem;
     line-height: 1;
-    color: #000339;
+    /* color: #000339; */
 }
 
 .featured .item .desc {
@@ -425,7 +441,6 @@ a {
     font-weight: 700;
     font-size: 2.6rem;
     letter-spacing: 0.01em;
-    color: #000339;
 }
 
 .stats .icon {
@@ -500,7 +515,8 @@ a {
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 1.29;
-    color: #000339;
+    /* color: #000339; */
+    color: var(--btn-bg-2);
     max-width: 269px;
 }
 
@@ -512,7 +528,8 @@ a {
     display: block;
     width: 41px;
     height: 4px;
-    background: #000339;
+    /* background: #000339; */
+    background: var(--btn-bg-2);
     border-radius: 12px;
 }
 
@@ -534,7 +551,7 @@ a {
 .stats .qty {
     font-weight: 600;
     font-size: 6.4rem;
-    color: #000000;
+    /* color: #000000; */
 }
 
 .stats .qty-desc {
@@ -586,6 +603,11 @@ a {
     min-width: 151px;
     background: #ffffff;
     color: #002366;
+}
+
+.subscription .info .btn:active {
+    font-size: 2rem;
+    color: white;
 }
 
 .subscription .image {
