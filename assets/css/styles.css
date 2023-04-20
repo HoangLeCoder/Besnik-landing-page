@@ -238,7 +238,7 @@ a {
     width: 41px;
     height: 4px;
     /* background: #000339; */
-    background: var(--btn-bg-2);;
+    background: var(--btn-bg-2);
     border-radius: 12px;
 }
 
@@ -368,7 +368,7 @@ a {
     font-weight: 600;
     font-size: 2rem;
     line-height: 1;
-    /* color: #000339; */
+    color: var(--btn-bg-2);
 }
 
 .featured .item .desc {
