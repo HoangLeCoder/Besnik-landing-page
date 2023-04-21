@@ -111,7 +111,8 @@ a {
 }
 
 .navbar ul a:hover {
-    text-decoration: underline;
+    text-shadow: 1px 0 0 currentColor;
+    color: var(--btn-bg-2);
 }
 
 .navbar .action-link {
